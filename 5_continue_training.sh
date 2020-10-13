@@ -1,7 +1,8 @@
 #!/bin/bash
 
 source 0_config.sh
-
+echo $OUTPUT_DIR
+mkdir -p $OUTPUT_DIR
 lstmtraining \
         --debug_interval $DEBUG \
         --continue_from $OUTPUT_DIR/${LANG}_checkpoint \

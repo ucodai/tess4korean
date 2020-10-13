@@ -13,10 +13,9 @@ combine_tessdata -u $TRAIN_BASE_DIR/tesseract/tessdata/best/$LANG.traineddata $L
 
 echo "==== Setting new version ===="
 
-VERSION_STR="$LANG version on $(date +%F) from"
+VERSION_STR="$LANG version on $(date +%F) from|"
 
-sed -e "s/^/$VERSION_STR" $LANG_TRAIN_DIR/$LANG.version > $LANG_TRAIN_DIR/$LANG.new.version
-
+sed -e "s/^/$VERSION_STR/" $LANG_TRAIN_DIR/$LANG.version > $LANG_TRAIN_DIR/$LANG.new.version
 echo "==== Merging unicharset ===="
 
 merge_unicharsets $LANG_TRAIN_DIR/$LANG.lstm-unicharset $LANG_TRAIN_DIR/$LANG/$LANG.unicharset $LANG_TRAIN_DIR/$LANG.unicharset

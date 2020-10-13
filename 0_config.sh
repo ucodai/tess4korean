@@ -3,7 +3,7 @@
 LANG=kor
 FONT_LIST="tvN Enjoystories"
 MAX_PAGES=10
-ITERATION=400
+ITERATION=4500
 DEBUG=-1
 
 # ===================================

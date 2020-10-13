@@ -15,3 +15,5 @@ $TRAIN_BASE_DIR/tesseract/src/training/tesstrain.sh --fonts_dir fonts \
 	     --save_box_tiff \
 	     --maxpages $MAX_PAGES \
 	     --output_dir $LANG_TRAIN_DIR
+
+mkdir -p $OUTPUT_DIR		 
